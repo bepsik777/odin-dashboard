@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1 ;
+    grid-row: 1 / span 2;
+
+    background-color: #67e8f9;
+}
+
+.nav {
+    grid-column: 2;
+    grid-row: 1;
+    
+    background-color: #0ea5e9;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 2;
+
+    background-color: #075985;
+}
+
