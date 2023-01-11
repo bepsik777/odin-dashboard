@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100;300&display=swap');
+
 
 :root {
     --main-font: 'Roboto', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
@@ -120,6 +122,8 @@ input[type='search'] {
 
 .btn-container {
     /* border: 1px solid black; */
+    justify-self: end;
+    margin-right: 2rem;
     
     width: 70%;
     grid-column: 2;
@@ -171,10 +175,42 @@ input[type='search'] {
 
 .card {
     background-color: #67e8f9;
-    border: 1px solid white;
-    height: 10rem;
+    min-height: 10rem;
     width: 100%;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+
+    display: flex;
+    flex-direction: column;
 }
+
+.card-content {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 20px 0 0 20px;
+    width: 90%;
+    height: 100%;
+}
+
+
+.card-content p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.icon-container {
+    /* border: 1px solid black; */
+    align-self: flex-end;
+    width: 6rem;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .right-container {
     /* border: 1px solid white; */
