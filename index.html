@@ -12,29 +12,36 @@
         <div class="sidebar">
             <h2>Dashboard</h2>
             <ul class="nav">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li class="home">Home</li>
+                <li class="profile">Profile</li>
+                <li class="messages">Messages</li>
+                <li class="history">History</li>
+                <li class="tasks">Tasks</li>
+                <li class="communities">Communities</li>
             </ul>
             <ul class="settings">
-                <ul>Settings</ul>
-                <ul>Support</ul>
-                <ul>Privacy</ul>
+                <li class="settings-button">Settings</li>
+                <li class="support">Support</li>
+                <li class="privacy">Privacy</li>
             </ul>
         </div>
         <header class="header">
-            <input type="search">
+            <div class="search-bar-wrapper">
+                <img src="icons/magnify.svg" alt="magnifying glass">
+                <input type="search">
+            </div>
             <div class="user-nav">
-                <img src="" alt="" class="bell-icon">
+                <img src="icons/alarm-bell.svg" alt="bell icon" class="bell-icon">
+                <img src="icons/spaceship.svg" alt="spaceship icon">
                 <p>Morgan Oakley</p>
             </div>
-            <div class="welcome-msg">
-                <p>Hi there;</p>
-                <p id="username">Morgan Oakley (@morgan)</p>
-            </div>
+            <div class="msg-wrapper">
+                <img src="icons/spaceship.svg" alt="spaceship icon">
+                <div class="welcome-msg">
+                    <p>Hi there;</p>
+                    <p id="username">Morgan Oakley (@morgan)</p>
+                </div>
+            </div> 
             <div class="btn-container">
                 <button class="btn">New</button>
                 <button class="btn">Upload</button>
@@ -213,9 +220,50 @@
                 </div>
             </div>
             <div class="right-container">
-                <div class="announcement"></div>
+                <div class="announcement">
+                    <div class="ann-section-wrapper">
+                        <div class="ann-section">
+                            <h4>Site maintenance</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec scelerisque ex enim, vel sollicitudin libero ullamcorper non.</p>
+                        </div>
+                        <div class="ann-section">
+                            <h4>Community share day</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec scelerisque ex enim, vel sollicitudin libero ullamcorper non.</p>
+                        </div>
+                        <div class="ann-section">
+                            <h4>Updated privacy policy</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec scelerisque ex enim, vel sollicitudin libero ullamcorper non.</p>
+                        </div>
+                    </div>
+                </div>
                 <h3>Trending</h3>
-                <div class="trending"></div>
+                <div class="trending">
+                    <div class="trending-wrapper">
+                        <img src="icons/ball1.svg" alt="planet picture">
+                        <img src="icons/ball2.svg" alt="planet picture">
+                        <img src="icons/ball3.svg" alt="planet picture">
+                        <img src="icons/ball4.svg" alt="planet pictures">
+                        <div class="trending-content">
+                            <h4>@tegan</h4>
+                            <p>World peace builder</p>
+                        </div>
+                        <div class="trending-content">
+                            <h4>@wojtek</h4>
+                            <p>Super cool project</p>
+                        </div>
+                        <div class="trending-content">
+                            <h4>@andrzej</h4>
+                            <p>Life changing app</p>
+                        </div>
+                        <div class="trending-content">
+                            <h4>@alex</h4>
+                            <p>No traffic maker</p>
+                        </div>
+                    </div>
+                </div>
             </div> 
         </main>
     </div>
